@@ -150,25 +150,13 @@ article.post {
   width: 35vw;
   height: 40vh; 
 }
-    .post img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        position: relative;
-    }
-    .photo::after {
-        content: "abc";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        background-color: #000;
-        background-size: 100% 100%;
-    }
 
+/*table {
+    height: 100vh;
+    background-image: url(../photos/elm-st.jpg);
+    background-size: cover;
+    background-position: center;
+}*/
 tr {
     vertical-align: top;
 }
@@ -180,26 +168,48 @@ td {
     }
     td:nth-child(even) {
         padding-top: 35vh;
-        /*background-color: pink;*/
     }
 
+.post img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+    .overlay::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #202020;
+        opacity: 0;
+    }
+    .overlay:hover::after {
+        opacity: 0.5;
+    }
 
 .line {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
     height: 0.5px;
-    background-color: #808080;
+    background-color: #909090;
 }
 
-.line {
-    margin-bottom: 10px;
-}
-
-.title {
+.time {
     margin-top: -5px;
-    margin-bottom: 0;
+    margin-bottom: -5px;
     font-size: 0.7rem;
 }
+
 /*medium screen*/
 @media only screen and (min-width: 25rem) {
     article.post {
@@ -211,7 +221,7 @@ td {
     td:nth-child(even) {
         padding-top: 25vh;
     }
-    .title {
+    .time {
         font-size: 0.9rem;
     }
 }
