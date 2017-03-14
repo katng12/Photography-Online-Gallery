@@ -148,7 +148,7 @@ nav {
 article.post {
     padding-top: 0;
   width: 35vw;
-  height: 40vh; 
+  height: 40vh;
 }
 
 /*table {
@@ -181,9 +181,12 @@ td {
     width: 100%;
     height: 100%;
     position: relative;
+    text-align: center;
+    background-color: pink;
 }
     .overlay::after {
         content: "";
+        color: #fff;
         position: absolute;
         top: 0;
         left: 0;
@@ -191,9 +194,33 @@ td {
         width: 100%;
         background-color: #202020;
         opacity: 0;
+        transition: all 0.7s;
     }
     .overlay:hover::after {
-        opacity: 0.5;
+        opacity: 0.7;
+    }
+div.title {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.7s;
+}
+    .title p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -100%);
+        padding: 10px;
+    }
+    .title:hover {
+        opacity: 1;
     }
 
 .line {
@@ -214,7 +241,7 @@ td {
 @media only screen and (min-width: 25rem) {
     article.post {
         width: 35vw;
-        height: 50vh;
+        height: 52vh;
         padding-right: 10vw;
         padding-left: 10vw; 
     }
