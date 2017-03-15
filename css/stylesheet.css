@@ -147,7 +147,7 @@ nav {
 }
 article.post {
     padding-top: 0;
-  width: 45vw;
+  width: 35vw;
   height: 40vh;
 }
 
@@ -164,10 +164,10 @@ td {
     vertical-align: top;
 }
     td:nth-child(odd) {
-        padding-top: 30vh;
+        padding-top: 10vh;
     }
     td:nth-child(even) {
-        padding-top: 45vh;
+        padding-top: 35vh;
     }
 
 .post img {
@@ -238,7 +238,7 @@ div.title {
 }
 
 /*medium screen*/
-@media only screen and (min-width: 25rem) {
+@media only screen and (min-width: 25em) {
     article.post {
         width: 35vw;
         height: 52vh;
@@ -254,7 +254,7 @@ div.title {
 }
 
 /*large screen*/
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 50em) {
     article.post {
         width: 250px;
         height: 55vh;
