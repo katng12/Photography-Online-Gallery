@@ -147,7 +147,7 @@ nav {
 }
 article.post {
     padding-top: 0;
-  width: 35vw;
+  width: 45vw;
   height: 40vh;
 }
 
@@ -164,10 +164,10 @@ td {
     vertical-align: top;
 }
     td:nth-child(odd) {
-        padding-top: 10vh;
+        padding-top: 30vh;
     }
     td:nth-child(even) {
-        padding-top: 35vh;
+        padding-top: 45vh;
     }
 
 .post img {
