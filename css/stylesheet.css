@@ -6,7 +6,7 @@ body {
     position: relative;
     color: #909090;
     font-family: 'Dosis', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     height: 100%;
 }
 
@@ -235,22 +235,47 @@ td {
     position: fixed;
     width: 100vw;
     height: 100%;
-    padding-top: 13vh;
     background-color: rgba(0, 0, 0, 0.8);
     left: 0;
     top: 0;
 }
 
-#modal-img {
+/*style the div containing modal photo and caption*/
+.modal-content {
     margin: auto;
+    margin-top: 50vh;
+    transform: translate(0, -50%);
+}
+
+#modal-img {
     display: block;
+    margin: auto;
     max-width: 80vw;
     max-height: 74vh;
 }
 
+.modal-title {
+    text-align: center;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.caption {
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 0.7rem;
+}
+/*close button for modal*/
 .close {
-    color: #666666;
+    color: #4d4d4d;
     float: right;
+    margin-right: 20px;
+    margin-top: -10px;
     font-size: 4rem;
 }
 
@@ -275,6 +300,15 @@ td {
     }
     .title {
         font-size: 1.3rem;
+    }
+    .close {
+        font-size: 5rem;
+    }
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    .caption {
+        font-size: 0.9rem;
     }
 }
 

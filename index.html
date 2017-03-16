@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400|Lato:300i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src= "js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Dosis:300,600" rel="stylesheet">
 	<title>t.win</title>
 </head>
 <body>
@@ -40,7 +40,7 @@
 		<div id="page-wrap">
 			<article class="post">
 				  <div class="overlay">
-				  	<img class="photo" src="photos/elm-st.jpg" alt='Elm St.'>
+				  	<img class="photo" src="photos/elm-st.jpg" alt='Elm St.' caption="Phone Photography. Washington, DC, October 2016.">
 				  	<p class="title">Elm St.</p>
 				  </div>
 			  <div class="line"></div>
@@ -50,13 +50,13 @@
 				<a href="#modal"><p  class="time">february | spring 2016</p></a>
 			  	<div class="line"></div>
 					<div class="overlay"  >
-				 		<img src="photos/sunset-waves.jpg" alt='Sunset Waves'>
+				 		<img src="photos/sunset-waves.jpg" alt='Sunset Waves' caption="Phone Photography. Washington, DC, February 2016.">
 				 		  <p class="title">Sunset Waves</p>
 				 	</div>
 			</article>
 			<article class="post">
 					<div class="overlay"  >
-						<img src="photos/if-only.jpg" alt='If Only'>
+						<img src="photos/if-only.jpg" alt='If Only' caption="Phone Photography. Washington, DC, Snowzilla, January 2016.">
 						  <p class="title">If Only</p>
 					</div>
 				<div class="line"></div>
@@ -66,14 +66,14 @@
 				<a href="#modal"><p  class="time">december | winter 2015</p></a>
 				<div class="line"></div>
 					<div class="overlay"  >
-				 		<img src="photos/talk.jpg" alt='Talk'>
+				 		<img src="photos/talk.jpg" alt='Talk' caption="Phone Photography. Washington, DC, Winter 2015">
 				 		  <p class="title">Talk</p>
 				 	</div>
 				</a>
 			</article>
 			<article class="post">
 					<div class="overlay"  >
-				 		<img src="photos/rain-on-the-hilltop.jpg" alt='Rain on the Hilltop'>
+				 		<img src="photos/rain-on-the-hilltop.jpg" alt='Rain on the Hilltop' caption="Phone Photography. Howard University, Fall 2015.">
 				 		  <p class="title">Rain on the Hilltop</p>
 				 	</div>
 			  	<div class="line"></div>
@@ -83,13 +83,13 @@
 				<a href="#modal"><p  class="time">april | spring 2015</p></a>
 				<div class="line"></div>
 					<div class="overlay"  >
-					 	<img src="photos/lost.JPG" alt='Lost'>
+					 	<img src="photos/lost.JPG" alt='Lost' caption="Canon Rebel t3. Minneapolis, April 2015.">
 					 	  <p class="title">Lost</p>
 				 	</div>
 			</article>
 			<article class="post">
 					<div class="overlay"  >
-					 	<img src="photos/life-passes.jpg" alt='Life Passes'>
+					 	<img src="photos/life-passes.jpg" alt='Life Passes' caption="Canon Rebel t3. Minneapolis, November 2014.">
 					 	  <p class="title">Life Passes</p>
 				 	</div>
 				<div class="line"></div>
@@ -99,13 +99,13 @@
 				<a href="#modal"><p  class="time">july | summer 2014</p></a>
 				<div class="line"></div>
 					<div class="overlay"  >
-					 	<img src="photos/twinkle-duluth.jpg" alt='Twinkle Duluth'>
+					 	<img src="photos/twinkle-duluth.jpg" alt='Twinkle Duluth' caption="Canon Rebel t3. Duluth, July 2014.">
 					 	  <p class="title">Twinkle Duluth</p>
 				 	</div>
 			</article>
 			<article class="post">
 					<div class="overlay"  >
-					 	<img src="photos/shooting-stars.JPG" alt='Shooting Stars'>
+					 	<img src="photos/shooting-stars.JPG" alt='Shooting Stars' caption="Canon Rebel t3. Los Angeles, November 2015.">
 					 	  <p class="title">Shooting Stars</p>
 				 	</div>
 				<div class="line"></div>
@@ -115,8 +115,11 @@
 			<!-- MODAL -->
 			<div id="modal" class="my-modal">
 				<span class="close">&times;</span>
-				<img id="modal-img" src="">
-				<p class="caption"></p>
+				<div class="modal-content">
+					<img id="modal-img" src="">
+					<p class="modal-title"></p>
+					<p class="caption"></p>
+				</div>
 			</div>
 		</div>
 	</section>

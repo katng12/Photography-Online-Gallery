@@ -31,20 +31,19 @@ $(function() {
     //show modal when image clicked
     $('.overlay').on('click', function() {
         var image = $(this).children("img").attr("src");
-        var caption = $(this).children("img").attr('alt');
+        var title = $(this).children("img").attr('alt');
+        var caption = $(this).children("img").attr("caption");
         $('#modal-img').attr("src", image);
+        $('.modal-title').html(title);
+        $('.caption').html(caption);
         $('#modal').show();
     });
     $('.close').on('click', function() {
         $('#modal').hide();
     });
- });
-
-//MODAL************************
-// function openModal() {
-//     document.getElementById('modal').style.display = "block";
-// }
-
-// function closeModal() {
-//     document.getElementById('myModal').style.display = "none";
-// }
+    $('html').on('click', function(event) {
+        if (event.target == $('#modal')) {
+            $('#modal').hide();
+        };
+    });
+});
